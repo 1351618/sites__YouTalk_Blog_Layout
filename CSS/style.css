@@ -131,17 +131,20 @@
           }
 
 
-          .main__pages__first-section-2-pages {
+        .main__pages__first-section-2-pages {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .main__pages__rest-section-3-pages {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-auto-rows: minmax(200px, auto);
-            grid-gap: 24px;
+            grid-template-columns: 1fr 1fr 1fr;
           }
           
-          @media (max-width: 767px) {
-            .main__pages__first-section-2-pages {
-              grid-template-columns: 1fr;
-            }
+
+
+        div p {
+            margin: 16px 16px 0px 16px
           }
 
   }
