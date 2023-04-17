@@ -1,223 +1,313 @@
 @font-face {
-    font-family: 'Montserrat';
-        src: url('font/Montserrat.ttf') format('truetype');
-        src: url('font/Montserrat-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Montserrat';
+  src: url('font/Montserrat.ttf') format('truetype');
+  src: url('font/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 /* Стили для экранов с шириной 1200px и больше =============================================== */
 @media (min-width: 1200px) {
-    * {
-        margin: 0;
-        padding: 0;
-      }
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-          /* Стили для блока шапки */
-    .header {
-        display: flex;
-        justify-content: space-between;
-        background: #FFFFFF;
-        border-bottom: 2px solid #d2d2d2;
-        height: 76px;
-    }
-
-
-    /* Стили для лого */
-    .header__logo {
-        padding-left: 120px;
-        padding-top: 20.8px;
-    }
-
-    /* Стили для меню */
-    .header__menu {
-        padding-left: 51px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header__menu li a {
-        text-decoration: none;
-        color: #333333;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-      }
-
-    .header__menu ul {
-        display: flex;
-        gap: 30px;
-        list-style-type: none;
-        font-size: 14px;
-        
-      }
-
-    /* Стили для кнопки */
-    .header__button button {
-        display: flex;
-        margin-right: 120px;
-        margin-top: 14px;
-        background-color: #E3F5F5;
-        color: #03B2A5;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        border: none;
-        border-radius: 4px;
-        height: 48px;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-      }
-      
-      .header__button button:hover {
-        background-color: #03B2A5;
-        color: #E3F5F5;
-      }
-
-        .a:hover {
-            cursor: pointer;
-        }
-
-        /* Стили для основного контента */
-        .main {
-            margin-left: 120px;
-            margin-right: 120px;
-        }
-
-        .main__path a {
-            text-decoration: none;
-            color: #33333370;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-        }
-
-        .main__path {
-            margin-top: 16px;
-            color: #33333370;
-            
-        }
+  /* Стили для блока шапки */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-bottom: 2px solid #d2d2d2;
+    height: 76px;
+  }
 
 
+  /* Стили для лого */
+  .header__logo {
+    padding-left: 120px;
+    padding-top: 20.8px;
+  }
 
-        .main__name-header {
-            margin-top: 30px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            font-size: 48px;
-        } 
+  /* Стили для меню */
+  .header__menu {
+    padding-left: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .header__menu li a {
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
 
-
-
-
-        .main__buttons .button {
-            border: 2px solid #33333370;
-            background-color: #FFFFFF;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            border-radius: 20px;
-            padding: 5px;
-            font-size: 14px;
-            
-
-        }
-        .main__buttons button:hover {
-            border: 2px solid #03B2A5;
-            box-shadow: 0 0 0 1px #03B2A5;
-            color: #030303;
-            font-size: 14px;
-          }
-
-
-        .main__pages__first-section-2-pages {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .main__pages__rest-section-3-pages {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-          }
-          
-
-
-        div p {
-            margin: 16px 16px 0px 16px
-          }
+  .header__menu ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 14px;
 
   }
-  
 
-
-  /* Стили для экранов от 769px до 1000px =============================================== */
-  @media (min-width: 769px) and (max-width: 1199px) {
-    * {
-        margin: 0;
-        padding: 0;
-      }
-
-          /* Стили для блока шапки */
-    .header {
-        display: flex;
-        background: #FFFFFF;
-        border-bottom: 2px solid #d2d2d2;
-        height: 76px;
-        
-        
-
-    }
-    /* Стили для лого */
-    .header__logo {
-        padding-left: 32px;
-        padding-top: 20.8px;
-    }
-
-    /* Стили для меню */
-    .header__menu {
-        color: #2aa54f;
-    }
-
-    /* Стили для кнопки */
-    .header__button {
-        border: #2aa54f;
-    }
-
-    /* Стили для основного контента */
-    .content {
-      background-color: #2aa54f;
-    }
-
-
-    body {
-      /* стиль */
-    }
+  /* Стили для кнопки */
+  .header__button button {
+    display: flex;
+    margin-right: 120px;
+    margin-top: 14px;
+    background-color: #E3F5F5;
+    color: #03B2A5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    height: 48px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
   }
-  
-  /* Стили для экранов меньше 769px =============================================== */
-  @media (max-width: 768px) {
-        /* Стили для блока шапки */
-        .header {
-            color: brown;
-          }
-          /* Стили для меню */
-          .header__menu {
-              color: brown;
-          }
-          /* Стили для кнопки */
-          .header__button {
-              color: brown;
-          }
-          /* Стили для основного контента */
-          .content {
-            background-color: brown;
-          }
-    body {
-      margin-bottom: 53px;
-    }
+
+  .header__button button:hover {
+    background-color: #03B2A5;
+    color: #E3F5F5;
+  }
+
+  .a:hover {
+    cursor: pointer;
+  }
+
+  /* Стили для основного контента */
+  .main {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .main__path a {
+    text-decoration: none;
+    color: #33333370;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+  }
+
+  .main__path {
+    margin-top: 16px;
+    color: #33333370;
+
+  }
+
+
+
+  .main__name-header {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
   }
 
 
 
 
+
+  .main__buttons .button {
+    border: 2px solid #33333370;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .main__buttons button:hover {
+    border: 2px solid #03B2A5;
+    box-shadow: 0 0 0 1px #03B2A5;
+    color: #030303;
+    font-size: 14px;
+  }
+
+
+  .main__pages__first-section-2-pages {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 520px;
+    gap: 24px;
+  }
+
+
+  .main__pages__rest-section-3-pages {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 520px;
+    gap: 24px;
+  }
+
+  .main__pages__first-section-2-pages>*,
+  .main__pages__rest-section-3-pages>* {
+    border: 2px solid #DEDEDE;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .main__pages img {
+    width: 100%;
+    height: 50%;
+  }
+
+
+
+  .main__pages p {
+    margin: 16px 16px 16px 16px;
+    height: 43%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .font_Name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .font_author {
+    font-size: 12px;
+    color: #494949;
+    margin-top: 4px;
+  }
+
+  .font_description {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .font_date {
+    font-size: 12px;
+    color: #868686;
+    margin-top: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стили для экранов от 769px до 1000px =============================================== */
+@media (min-width: 769px) and (max-width: 1199px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Стили для блока шапки */
+  .header {
+    display: flex;
+    background: #FFFFFF;
+    border-bottom: 2px solid #d2d2d2;
+    height: 76px;
+
+
+
+  }
+
+  /* Стили для лого */
+  .header__logo {
+    padding-left: 32px;
+    padding-top: 20.8px;
+  }
+
+  /* Стили для меню */
+  .header__menu {
+    color: #2aa54f;
+  }
+
+  /* Стили для кнопки */
+  .header__button {
+    border: #2aa54f;
+  }
+
+  /* Стили для основного контента */
+  .content {
+    background-color: #2aa54f;
+  }
+
+
+  body {
+    /* стиль */
+  }
+}
+
+/* Стили для экранов меньше 769px =============================================== */
+@media (max-width: 768px) {
+
+  /* Стили для блока шапки */
+  .header {
+    color: brown;
+  }
+
+  /* Стили для меню */
+  .header__menu {
+    color: brown;
+  }
+
+  /* Стили для кнопки */
+  .header__button {
+    color: brown;
+  }
+
+  /* Стили для основного контента */
+  .content {
+    background-color: brown;
+  }
+
+  body {
+    margin-bottom: 53px;
+  }
+}
