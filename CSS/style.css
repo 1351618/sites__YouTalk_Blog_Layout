@@ -193,6 +193,147 @@
     margin-top: auto;
   }
 
+  #eshe {
+    background-color: #35B3A9;
+    color: #ffffff;
+    width: 182px;
+    height: 48px;
+    border-radius: 4px;
+    border-color: transparent;
+    display: block;
+    margin: 56px auto;
+    cursor: pointer;
+  }
+
+  #eshe:hover {
+    background-color: #00d3c5;
+  }
+
+  /* footer ======================================== */
+
+  footer {
+    background-color: #2963A3;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 120px 17px;
+    color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #footer__block {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 2fr 1fr;
+    grid-auto-flow: auto auto;
+    gap: 28px;
+  }
+
+  .footer__block_menu {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .footer__block_section {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .footer__block_letters {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.footer__block_letters img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  input[type="email"] {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    width: 320px;
+    height: 48px;
+    padding-left: 16px;
+  }
+
+  button[type="submit"] {
+    background-color: #16C8BB;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    width: 64px;
+    height: 48px;
+    cursor: pointer;
+  }
+
+
+
+
+  .footer__block_letters-18px {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .footer__block_letters-12px {
+    font-size: 12px;
+    color: #ffffff70;
+  }
+
+  .footer__block_cowctnb {
+    grid-column: 4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer__block_dop-info {
+    grid-column: 1 / span 4;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    font-size: 14px;
+    border-top: 1px solid #9d9d9db3;
+    padding-top: 16px;
+  }
+
+  .footer__block_dop-info a {
+    color: #ffffff70;
+  }
+
+
+
+  #footer__block_cowctnb-cowctnb img {
+    height: 32px;
+    width: 32px;
+    margin-top: 40px;
+    margin-right: 16px;
+  }
+
+
 }
 
 
