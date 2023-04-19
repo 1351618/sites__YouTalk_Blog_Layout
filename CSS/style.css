@@ -30,6 +30,10 @@
     padding-top: 20.8px;
   }
 
+  .header__menu_button {
+    display: none;
+  }
+
   /* Стили для меню */
   .header__menu {
     padding-left: 51px;
@@ -130,6 +134,10 @@
     font-size: 14px;
   }
 
+  .main__buttons img {
+    height: 14px;
+  }
+
 
   .main__pages__first-section-2-pages {
     margin-top: 30px;
@@ -157,7 +165,8 @@
 
   .main__pages img {
     width: 100%;
-    height: 50%;
+    height: auto;
+    object-fit: cover;
   }
 
 
@@ -390,13 +399,14 @@
   /* Стили для блока шапки */
   .header {
     display: flex;
+    justify-content: space-between;
     background: #FFFFFF;
     border-bottom: 2px solid #d2d2d2;
     height: 76px;
-
-
-
   }
+
+
+
 
   /* Стили для лого */
   .header__logo {
@@ -406,49 +416,407 @@
 
   /* Стили для меню */
   .header__menu {
-    color: #2aa54f;
+    padding-left: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
   }
 
-  /* Стили для кнопки */
+  .header__menu_button {
+    display: none;
+  }
+
+  .header__menu li a {
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  .header__menu ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 14px;
+
+  }
+
   .header__button {
-    border: #2aa54f;
+    display: none;
+  }
+
+
+  .a:hover {
+    cursor: pointer;
   }
 
   /* Стили для основного контента */
-  .content {
-    background-color: #2aa54f;
+  .main {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .main__path a {
+    text-decoration: none;
+    color: #33333370;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+  }
+
+  .main__path {
+    margin-top: 16px;
+    color: #33333370;
+
   }
 
 
-  body {
-    /* стиль */
+
+  .main__name-header {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
   }
+
+
+
+
+
+  .main__buttons .button {
+    border: 2px solid #33333370;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .main__buttons button:hover {
+    border: 2px solid #03B2A5;
+    box-shadow: 0 0 0 1px #03B2A5;
+    color: #030303;
+    font-size: 14px;
+  }
+
+  .main__buttons img {
+    height: 14px;
+  }
+
+
+  .main__pages__first-section-2-pages {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+
+
+  .main__pages__rest-section-3-pages {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 24px;
+  }
+
+  .main__pages__first-section-2-pages>*,
+  .main__pages__rest-section-3-pages>* {
+    border: 2px solid #DEDEDE;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .main__pages img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+
+  .main__pages p {
+    margin: 16px 16px 16px 16px;
+    height: 43%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .font_Name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .font_author {
+    font-size: 12px;
+    color: #494949;
+    margin-top: 4px;
+  }
+
+  .font_description {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .font_date {
+    font-size: 12px;
+    color: #868686;
+    margin-top: 30px;
+  }
+
+  #eshe {
+    background-color: #35B3A9;
+    color: #ffffff;
+    width: 182px;
+    height: 48px;
+    border-radius: 4px;
+    border-color: transparent;
+    display: block;
+    margin: 56px auto;
+    cursor: pointer;
+  }
+
+  #eshe:hover {
+    background-color: #00d3c5;
+  }
+
+  /* footer ======================================== */
+
+  footer {
+    display: none;
+  }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Стили для экранов меньше 769px =============================================== */
 @media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
   /* Стили для блока шапки */
   .header {
-    color: brown;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-bottom: 2px solid #d2d2d2;
+    height: 76px;
+  }
+
+
+
+
+  /* Стили для лого */
+  .header__logo {
+    padding-left: 32px;
+    padding-top: 20.8px;
+  }
+
+  .header__menu_button {
+    height: 18px;
+    width: 14px;
+    margin: 31px;
+    border: none;
+  }
+
+  .header__menu {
+    display: none;
   }
 
   /* Стили для меню */
-  .header__menu {
-    color: brown;
+
+
+
+
+
+
+  .header__button {
+    display: none;
   }
 
-  /* Стили для кнопки */
-  .header__button {
-    color: brown;
+
+  .a:hover {
+    cursor: pointer;
   }
 
   /* Стили для основного контента */
-  .content {
-    background-color: brown;
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-  body {
-    margin-bottom: 53px;
+  .main__path a {
+    text-decoration: none;
+    color: #33333370;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+  }
+
+  .main__path {
+    margin-top: 16px;
+    color: #33333370;
+
+  }
+
+
+
+  .main__name-header {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+  }
+
+
+
+
+
+  .main__buttons .button {
+    border: 2px solid #33333370;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .main__buttons button:hover {
+    border: 2px solid #03B2A5;
+    box-shadow: 0 0 0 1px #03B2A5;
+    color: #030303;
+    font-size: 14px;
+  }
+
+  .main__buttons img {
+    height: 14px;
+  }
+
+  .main__pages__rest-section-3-pages,
+  .main__pages__first-section-2-pages {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+
+
+  /* .main__pages__rest-section-3-pages {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 24px;
+  } */
+
+  .main__pages__first-section-2-pages>*,
+  .main__pages__rest-section-3-pages>* {
+    border: 2px solid #DEDEDE;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .main__pages img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+
+  .main__pages p {
+    margin: 16px 16px 16px 16px;
+    height: 43%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .font_Name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .font_author {
+    font-size: 12px;
+    color: #494949;
+    margin-top: 4px;
+  }
+
+  .font_description {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .font_date {
+    font-size: 12px;
+    color: #868686;
+    margin-top: 30px;
+  }
+
+  #eshe {
+    background-color: #35B3A9;
+    color: #ffffff;
+    width: 182px;
+    height: 48px;
+    border-radius: 4px;
+    border-color: transparent;
+    display: block;
+    margin: 56px auto;
+    cursor: pointer;
+  }
+
+  #eshe:hover {
+    background-color: #00d3c5;
+  }
+
+  /* footer ======================================== */
+
+  footer {
+    display: none;
   }
 }
