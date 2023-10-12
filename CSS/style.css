@@ -1,11 +1,14 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('font/Montserrat.ttf') format('truetype');
-  src: url('font/Montserrat-Bold.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("font/Montserrat.ttf") format("truetype");
+  src: url("font/Montserrat-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+body {
+  background-color: #ffffff;
+}
 
 /* Стили для экранов с шириной 1200px и больше =============================================== */
 @media (min-width: 1200px) {
@@ -18,11 +21,10 @@
   .header {
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: #ffffff;
     border-bottom: 2px solid #d2d2d2;
     height: 76px;
   }
-
 
   /* Стили для лого */
   .header__logo {
@@ -45,7 +47,7 @@
   .header__menu li a {
     text-decoration: none;
     color: #333333;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
   }
 
@@ -54,7 +56,6 @@
     gap: 30px;
     list-style-type: none;
     font-size: 14px;
-
   }
 
   /* Стили для кнопки */
@@ -62,9 +63,9 @@
     display: flex;
     margin-right: 120px;
     margin-top: 14px;
-    background-color: #E3F5F5;
-    color: #03B2A5;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #e3f5f5;
+    color: #03b2a5;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border: none;
     border-radius: 4px;
@@ -76,8 +77,8 @@
   }
 
   .header__button button:hover {
-    background-color: #03B2A5;
-    color: #E3F5F5;
+    background-color: #03b2a5;
+    color: #e3f5f5;
   }
 
   .a:hover {
@@ -93,33 +94,26 @@
   .main__path a {
     text-decoration: none;
     color: #33333370;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
   }
 
   .main__path {
     margin-top: 16px;
     color: #33333370;
-
   }
-
-
 
   .main__name-header {
     margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 48px;
   }
 
-
-
-
-
   .main__buttons .button {
     border: 2px solid #33333370;
-    background-color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border-radius: 20px;
     padding: 5px;
@@ -128,8 +122,8 @@
   }
 
   .main__buttons button:hover {
-    border: 2px solid #03B2A5;
-    box-shadow: 0 0 0 1px #03B2A5;
+    border: 2px solid #03b2a5;
+    box-shadow: 0 0 0 1px #03b2a5;
     color: #030303;
     font-size: 14px;
   }
@@ -137,7 +131,6 @@
   .main__buttons img {
     height: 14px;
   }
-
 
   .main__pages__first-section-2-pages {
     margin-top: 30px;
@@ -147,7 +140,6 @@
     gap: 24px;
   }
 
-
   .main__pages__rest-section-3-pages {
     margin-top: 30px;
     display: grid;
@@ -156,9 +148,9 @@
     gap: 24px;
   }
 
-  .main__pages__first-section-2-pages>*,
-  .main__pages__rest-section-3-pages>* {
-    border: 2px solid #DEDEDE;
+  .main__pages__first-section-2-pages > *,
+  .main__pages__rest-section-3-pages > * {
+    border: 2px solid #dedede;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -169,12 +161,10 @@
     object-fit: cover;
   }
 
-
-
   .main__pages p {
     margin: 16px 16px 16px 16px;
     height: 43%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -203,7 +193,7 @@
   }
 
   #eshe {
-    background-color: #35B3A9;
+    background-color: #35b3a9;
     color: #ffffff;
     width: 182px;
     height: 48px;
@@ -221,8 +211,8 @@
   /* footer ======================================== */
 
   footer {
-    background-color: #2963A3;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #2963a3;
+    font-family: "Montserrat", sans-serif;
     padding: 40px 120px 17px;
     color: #ffffff;
   }
@@ -277,8 +267,6 @@
     align-items: center;
   }
 
-
-
   input[type="email"] {
     border: none;
     border-radius: 5px 0 0 5px;
@@ -289,7 +277,7 @@
   }
 
   button[type="submit"] {
-    background-color: #16C8BB;
+    background-color: #16c8bb;
     color: #fff;
     border-radius: 0 5px 5px 0;
     border: none;
@@ -297,9 +285,6 @@
     height: 48px;
     cursor: pointer;
   }
-
-
-
 
   .footer__block_letters-18px {
     font-size: 18px;
@@ -333,61 +318,13 @@
     color: #ffffff70;
   }
 
-
-
   #footer__block_cowctnb-cowctnb img {
     height: 32px;
     width: 32px;
     margin-top: 40px;
     margin-right: 16px;
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Стили для экранов от 769px до 1000px =============================================== */
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -400,13 +337,10 @@
   .header {
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: #ffffff;
     border-bottom: 2px solid #d2d2d2;
     height: 76px;
   }
-
-
-
 
   /* Стили для лого */
   .header__logo {
@@ -430,7 +364,7 @@
   .header__menu li a {
     text-decoration: none;
     color: #333333;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
   }
 
@@ -439,13 +373,11 @@
     gap: 30px;
     list-style-type: none;
     font-size: 14px;
-
   }
 
   .header__button {
     display: none;
   }
-
 
   .a:hover {
     cursor: pointer;
@@ -460,33 +392,26 @@
   .main__path a {
     text-decoration: none;
     color: #33333370;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
   }
 
   .main__path {
     margin-top: 16px;
     color: #33333370;
-
   }
-
-
 
   .main__name-header {
     margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 48px;
   }
 
-
-
-
-
   .main__buttons .button {
     border: 2px solid #33333370;
-    background-color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border-radius: 20px;
     padding: 5px;
@@ -495,8 +420,8 @@
   }
 
   .main__buttons button:hover {
-    border: 2px solid #03B2A5;
-    box-shadow: 0 0 0 1px #03B2A5;
+    border: 2px solid #03b2a5;
+    box-shadow: 0 0 0 1px #03b2a5;
     color: #030303;
     font-size: 14px;
   }
@@ -504,7 +429,6 @@
   .main__buttons img {
     height: 14px;
   }
-
 
   .main__pages__first-section-2-pages {
     margin-top: 30px;
@@ -514,7 +438,6 @@
     gap: 24px;
   }
 
-
   .main__pages__rest-section-3-pages {
     margin-top: 30px;
     display: grid;
@@ -523,9 +446,9 @@
     gap: 24px;
   }
 
-  .main__pages__first-section-2-pages>*,
-  .main__pages__rest-section-3-pages>* {
-    border: 2px solid #DEDEDE;
+  .main__pages__first-section-2-pages > *,
+  .main__pages__rest-section-3-pages > * {
+    border: 2px solid #dedede;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -536,12 +459,10 @@
     object-fit: cover;
   }
 
-
-
   .main__pages p {
     margin: 16px 16px 16px 16px;
     height: 43%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -570,7 +491,7 @@
   }
 
   #eshe {
-    background-color: #35B3A9;
+    background-color: #35b3a9;
     color: #ffffff;
     width: 182px;
     height: 48px;
@@ -590,43 +511,7 @@
   footer {
     display: none;
   }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Стили для экранов меньше 769px =============================================== */
 @media (max-width: 768px) {
@@ -639,13 +524,10 @@
   .header {
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: #ffffff;
     border-bottom: 2px solid #d2d2d2;
     height: 76px;
   }
-
-
-
 
   /* Стили для лого */
   .header__logo {
@@ -666,15 +548,9 @@
 
   /* Стили для меню */
 
-
-
-
-
-
   .header__button {
     display: none;
   }
-
 
   .a:hover {
     cursor: pointer;
@@ -689,33 +565,26 @@
   .main__path a {
     text-decoration: none;
     color: #33333370;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
   }
 
   .main__path {
     margin-top: 16px;
     color: #33333370;
-
   }
-
-
 
   .main__name-header {
     margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 48px;
   }
 
-
-
-
-
   .main__buttons .button {
     border: 2px solid #33333370;
-    background-color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border-radius: 20px;
     padding: 5px;
@@ -724,8 +593,8 @@
   }
 
   .main__buttons button:hover {
-    border: 2px solid #03B2A5;
-    box-shadow: 0 0 0 1px #03B2A5;
+    border: 2px solid #03b2a5;
+    box-shadow: 0 0 0 1px #03b2a5;
     color: #030303;
     font-size: 14px;
   }
@@ -743,7 +612,6 @@
     gap: 24px;
   }
 
-
   /* .main__pages__rest-section-3-pages {
     margin-top: 30px;
     display: grid;
@@ -752,9 +620,9 @@
     gap: 24px;
   } */
 
-  .main__pages__first-section-2-pages>*,
-  .main__pages__rest-section-3-pages>* {
-    border: 2px solid #DEDEDE;
+  .main__pages__first-section-2-pages > *,
+  .main__pages__rest-section-3-pages > * {
+    border: 2px solid #dedede;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -765,12 +633,10 @@
     object-fit: cover;
   }
 
-
-
   .main__pages p {
     margin: 16px 16px 16px 16px;
     height: 43%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -799,7 +665,7 @@
   }
 
   #eshe {
-    background-color: #35B3A9;
+    background-color: #35b3a9;
     color: #ffffff;
     width: 182px;
     height: 48px;
